@@ -3,65 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Fadlalla - CV</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <title>Mohamed Fadlalla - AI Automation Specialist</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --background-color: #f4f4f4;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+        h1, h2 {
+            color: var(--secondary-color);
+        }
+        h1 {
+            margin-bottom: 0;
+        }
+        h2 {
+            margin-top: 0;
+            font-weight: 300;
+        }
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 2rem;
+        }
+        .project {
+            background-color: var(--background-color);
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: translateX(5px);
+        }
+        .project h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .project a:hover {
+            color: var(--secondary-color);
+        }
+        .contact {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            border-radius: 8px;
+        }
+        .contact p {
+            margin-bottom: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li:before {
+            content: "▹";
+            color: var(--primary-color);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <div class="container mx-auto p-4">
-        <header class="bg-white shadow rounded-lg p-6 mb-6">
-            <h1 class="text-3xl font-bold text-gray-800">Mohamed Fadlalla</h1>
-            <p class="text-gray-600">Data Scientist & Researcher</p>
-        </header>
+<body>
+    <header>
+        <h1>Mohamed Fadlalla</h1>
+        <h2>AI Automation Specialist</h2>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2>What I Do</h2>
+            <p>I create intelligent automation solutions using AI technologies, specializing in LLMs, prompt engineering, and workflow automation for business and research.</p>
+        </section>
 
-        <main class="bg-white shadow rounded-lg p-6">
-            <section id="summary" class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-800 mb-2">Summary</h2>
-                <p id="brief-summary" class="text-gray-600">
-                    <!-- Brief summary will be inserted here -->
-                </p>
-            </section>
+        <section class="section">
+            <h2>Key Strengths</h2>
+            <ul>
+                <li>LLM implementation and prompt engineering</li>
+                <li>AI-driven workflow design (LangChain, LangGraph)</li>
+                <li>Data processing and analysis automation</li>
+                <li>Interdisciplinary AI applications</li>
+            </ul>
+        </section>
 
-            <section id="skills" class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-800 mb-2">Skills</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-700 mb-2">Data Science Skills</h3>
-                        <ul id="ds-skills" class="list-disc list-inside text-gray-600">
-                            <!-- Data science skills will be inserted here -->
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-700 mb-2">Research Skills</h3>
-                        <ul id="research-skills" class="list-disc list-inside text-gray-600">
-                            <!-- Research skills will be inserted here -->
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-700 mb-2">Organizational Skills</h3>
-                        <ul id="org-skills" class="list-disc list-inside text-gray-600">
-                            <!-- Organizational skills will be inserted here -->
-                        </ul>
-                    </div>
-                </div>
-            </section>
+        <section class="section">
+            <h2>Featured Projects</h2>
+            <div class="project">
+                <h3>Workflow Generator</h3>
+                <p>AI tool that automates scientific workflow generation from research papers.</p>
+                <a href="https://workflowgenerator.streamlit.app/" target="_blank">View Project →</a>
+            </div>
+            <div class="project">
+                <h3>KSA Cancer Project</h3>
+                <p>Interactive visualization of cancer statistics in Saudi Arabia using AI-driven data analysis.</p>
+                <a href="https://ksa-cancer.streamlit.app/" target="_blank">View Project →</a>
+            </div>
+            <div class="project">
+                <h3>MediBot</h3>
+                <p>AI-powered chatbot for medical consultations and information retrieval.</p>
+                <a href="https://github.com/mfadlalla/medibot" target="_blank">View Project →</a>
+            </div>
+        </section>
 
-            <section id="publications" class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-800 mb-2">Publications</h2>
-                <div id="publications-list">
-                    <!-- Publications will be inserted here -->
-                </div>
-            </section>
-        </main>
-
-        <footer class="mt-6 text-center text-gray-600">
-            <p>Contact: Mohamedbadrelmaarif@gmail.com</p>
-            <a href="Mohamed Fadlalla.pdf" download class="inline-block bg-blue-500 text-white px-4 py-2 rounded mt-2">Download Resume</a>
-        </footer>
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>Contact me at: <strong>mohamedbadrelmaarif@gmail.com</strong></p>
+        </section>
     </div>
-
-    <script>
-        // JavaScript to populate the content will be added here
-    </script>
 </body>
 </html>
